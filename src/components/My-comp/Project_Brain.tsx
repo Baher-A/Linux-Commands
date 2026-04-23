@@ -164,7 +164,6 @@ export default function Project_Brain() {
 
   return (
     <>
-      {/* Controls */}
       <div className="bg-terminal-card border-terminal-border">
         <div className="pt-6">
           <div className="grid sm:grid-cols-2 grid-cols-1 items-center justify-center gap-7">
@@ -217,7 +216,6 @@ export default function Project_Brain() {
         </div>
       </div>
 
-      {/* Stats Grid */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-10">
         {[
           {
@@ -273,7 +271,6 @@ export default function Project_Brain() {
           }}
           className="bg-black/60 p-4 relative min-h-[80px] w-full  focus:outline-none rounded-[9px] flex items-center "
         >
-          {/* Overlay typed text with highlighting */}
           <input
             ref={inputRef}
             value={typed}
@@ -305,7 +302,7 @@ export default function Project_Brain() {
       {/* Results 'll show when timeLeft === 0 */}
       {timeLeft === 0 && (
         <div
-          className={`space-y-5 ${timeLeft === 0 ? "opacity-100 animate-in fade-in duration-1000" : "opacity-0"}`}
+          className={`mt-10  ${timeLeft === 0 ? "opacity-100 animate-in fade-in duration-1000" : "opacity-0"}`}
         >
           <Result reset={reset} completed_commands={completed} />
         </div>

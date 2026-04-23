@@ -3,7 +3,7 @@ import Tips from "@/components/Section1/Tips";
 import { Terminal } from "lucide-react";
 export default function Home() {
   return (
-    <div className="min-h-screen bg-terminal-bg text-terminal-text font-mono p-6">
+    <div className=" bg-terminal-bg text-terminal-text font-mono container mx-auto ">
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Header */}
         <div className="p-5 rounded-2xl space-x-5 flex items-center shadow-2xl shadow-gray-950">

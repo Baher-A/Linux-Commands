@@ -45,7 +45,7 @@ export function Result_Table({
     );
 
   return (
-    <div className="rounded-lg border  text-card-foreground shadow-sm border-terminal-border-0 bg-card-bg/50 p-5">
+    <div className="rounded-lg  text-card-foreground shadow-sm border-2 border-terminal-border bg-card-bg/50">
       <Table>
         <TableHeader>
           <TableRow className="border-b border-border/50 hover:bg-transparent ">
@@ -103,7 +103,7 @@ export function Result_Table({
         </TableBody>
       </Table>
 
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-4 w-full mx-auto my-5">
         <Reset_Btn reset={reset} text="Try Again" />
       </div>
     </div>

@@ -18,20 +18,18 @@ export default function Result({
       completed_commands.length,
   );
   return (
-    <>
+    <div>
       <h1 className="text-2xl capitalize flex items-center gap-2 ">
         {" "}
         <BowArrow className="text-yellow-500 stroke-2" />
         Test Results
       </h1>
-      <div className="w-full">
-        <Result_Table
-          reset={reset}
-          results={completed_commands}
-          totalMistakes={totalMistakes}
-          totalAccuracy={totalAccuracy ?? 0}
-        />
-      </div>
-    </>
+      <Result_Table
+        reset={reset}
+        results={completed_commands}
+        totalMistakes={totalMistakes}
+        totalAccuracy={totalAccuracy ?? 0}
+      />
+    </div>
   );
 }

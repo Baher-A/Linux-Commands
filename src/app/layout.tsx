@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Command Test",
   description: "Test your Linux command speed",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 const jbmono = JetBrains_Mono({
   subsets: ["latin"],
@@ -31,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${jbmono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jbmono.variable} antialiased overflow-x-hidden`}
       >
         <Particles
           particleColors={["#c5c5c5", "#c5c5c5", "#c5c5c5"]}
@@ -41,9 +44,9 @@ export default function RootLayout({
           particleBaseSize={100}
           alphaParticles={false}
           disableRotation={false}
-          pixelRatio={2}
-          className="-z-10"
+          pixelRatio={1}
         />
+
         {children}
       </body>
     </html>
